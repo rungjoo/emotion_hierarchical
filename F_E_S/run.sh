@@ -1,0 +1,1 @@
+python3 train.py --class_type f2c

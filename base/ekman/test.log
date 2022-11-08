@@ -1,0 +1,2 @@
+Ekman ## precision: [47.61, 37.78, 29.61], recall: [45.11, 71.15, 82.89], macro-F1: 32.31, micro-F1: 44.83
+Sentiment ## precision: [48.98, 38.55, 31.88], recall: [46.52, 72.77, 89.77], macro-F1: 38.53, micro-F1: 46.82

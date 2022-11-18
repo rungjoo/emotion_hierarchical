@@ -1,0 +1,83 @@
+Epoch: 0
+(Dev) Fine-grained ## precision: [32.55, 19.16, 15.32], recall: [30.92, 35.39, 41.69], macro-F1: 1.62, micro-F1: 29.34
+(Dev) Ekman ## precision: [40.86, 36.72, 26.14], recall: [38.27, 69.25, 73.57], macro-F1: 8.09, micro-F1: 39.46
+(Dev) Sentiment ## precision: [40.9, 36.56, 32.1], recall: [38.32, 68.93, 90.03], macro-F1: 14.46, micro-F1: 40.69
+(Test) Fine-grained ## precision: [32.93, 19.46, 15.39], recall: [31.23, 36.01, 42.01], macro-F1: 1.63, micro-F1: 29.59
+(Test) Ekman ## precision: [38.73, 35.85, 25.7], recall: [36.51, 67.79, 72.42], macro-F1: 7.85, micro-F1: 37.76
+(Test) Sentiment ## precision: [38.77, 35.61, 31.64], recall: [36.55, 67.27, 89.26], macro-F1: 13.94, micro-F1: 38.66
+
+Epoch: 1
+(Dev) Fine-grained ## precision: [35.05, 21.3, 16.67], recall: [33.18, 39.13, 45.13], macro-F1: 4.32, micro-F1: 31.81
+(Dev) Ekman ## precision: [40.8, 36.72, 28.95], recall: [38.25, 69.25, 81.09], macro-F1: 9.93, micro-F1: 39.29
+(Dev) Sentiment ## precision: [40.9, 36.49, 32.1], recall: [38.32, 68.47, 90.03], macro-F1: 14.46, micro-F1: 40.69
+(Test) Fine-grained ## precision: [35.69, 21.52, 16.6], recall: [33.64, 39.64, 45.3], macro-F1: 4.61, micro-F1: 32.19
+(Test) Ekman ## precision: [39.58, 35.85, 28.38], recall: [37.36, 67.79, 79.73], macro-F1: 10.07, micro-F1: 38.31
+(Test) Sentiment ## precision: [38.77, 35.98, 31.65], recall: [36.55, 67.81, 89.28], macro-F1: 13.94, micro-F1: 38.66
+
+Epoch: 2
+(Dev) Fine-grained ## precision: [37.17, 22.7, 17.42], recall: [34.82, 41.39, 46.91], macro-F1: 6.01, micro-F1: 33.82
+(Dev) Ekman ## precision: [43.33, 37.11, 29.47], recall: [40.87, 69.89, 82.34], macro-F1: 16.21, micro-F1: 41.01
+(Dev) Sentiment ## precision: [42.72, 37.38, 32.1], recall: [40.06, 70.18, 90.03], macro-F1: 19.68, micro-F1: 42.31
+(Test) Fine-grained ## precision: [37.5, 23.11, 17.83], recall: [35.07, 42.32, 48.28], macro-F1: 6.43, micro-F1: 34.02
+(Test) Ekman ## precision: [43.3, 36.43, 28.84], recall: [41.02, 68.8, 80.95], macro-F1: 16.71, micro-F1: 41.24
+(Test) Sentiment ## precision: [41.5, 36.57, 31.64], recall: [39.19, 68.98, 89.27], macro-F1: 20.23, micro-F1: 41.26
+
+Epoch: 3
+(Dev) Fine-grained ## precision: [37.49, 23.75, 18.25], recall: [35.07, 43.25, 49.08], macro-F1: 7.04, micro-F1: 34.15
+(Dev) Ekman ## precision: [44.58, 37.51, 29.49], recall: [42.24, 70.6, 82.31], macro-F1: 17.85, micro-F1: 42.06
+(Dev) Sentiment ## precision: [43.38, 37.99, 32.2], recall: [40.71, 71.39, 90.3], macro-F1: 21.0, micro-F1: 42.92
+(Test) Fine-grained ## precision: [38.05, 24.15, 18.24], recall: [35.5, 44.06, 49.41], macro-F1: 7.94, micro-F1: 34.4
+(Test) Ekman ## precision: [44.22, 36.91, 29.3], recall: [41.96, 69.69, 82.12], macro-F1: 17.3, micro-F1: 41.7
+(Test) Sentiment ## precision: [42.14, 37.52, 31.68], recall: [39.81, 70.83, 89.38], macro-F1: 21.53, micro-F1: 41.9
+
+Epoch: 4
+(Dev) Fine-grained ## precision: [38.76, 24.13, 18.78], recall: [36.12, 43.9, 50.47], macro-F1: 9.43, micro-F1: 35.29
+(Dev) Ekman ## precision: [45.65, 37.83, 29.75], recall: [43.17, 71.15, 83.01], macro-F1: 23.43, micro-F1: 42.83
+(Dev) Sentiment ## precision: [43.46, 38.2, 32.3], recall: [40.78, 71.82, 90.54], macro-F1: 21.65, micro-F1: 43.02
+(Test) Fine-grained ## precision: [39.84, 24.84, 18.97], recall: [37.03, 45.26, 51.3], macro-F1: 10.78, micro-F1: 36.08
+(Test) Ekman ## precision: [45.68, 37.35, 29.51], recall: [43.32, 70.54, 82.76], macro-F1: 23.11, micro-F1: 42.9
+(Test) Sentiment ## precision: [42.23, 37.6, 31.79], recall: [39.91, 71.0, 89.67], macro-F1: 21.95, micro-F1: 42.01
+
+Epoch: 5
+(Dev) Fine-grained ## precision: [39.35, 24.71, 19.09], recall: [36.62, 44.8, 51.19], macro-F1: 10.92, micro-F1: 35.68
+(Dev) Ekman ## precision: [46.04, 38.07, 29.71], recall: [43.61, 71.56, 82.96], macro-F1: 27.09, micro-F1: 43.16
+(Dev) Sentiment ## precision: [43.13, 38.08, 32.3], recall: [40.46, 71.47, 90.51], macro-F1: 21.46, micro-F1: 42.78
+(Test) Fine-grained ## precision: [40.48, 25.39, 19.25], recall: [37.45, 46.12, 51.94], macro-F1: 12.81, micro-F1: 36.39
+(Test) Ekman ## precision: [46.62, 37.49, 29.37], recall: [44.24, 70.79, 82.37], macro-F1: 29.03, micro-F1: 43.71
+(Test) Sentiment ## precision: [41.63, 37.65, 31.8], recall: [39.3, 71.07, 89.68], macro-F1: 21.08, micro-F1: 41.44
+
+Epoch: 6
+(Dev) Fine-grained ## precision: [39.4, 24.82, 19.27], recall: [36.65, 45.08, 51.8], macro-F1: 11.62, micro-F1: 35.75
+(Dev) Ekman ## precision: [46.46, 38.08, 29.7], recall: [43.91, 71.6, 82.99], macro-F1: 28.84, micro-F1: 43.35
+(Dev) Sentiment ## precision: [43.13, 38.28, 32.23], recall: [40.45, 71.94, 90.31], macro-F1: 22.1, micro-F1: 42.66
+(Test) Fine-grained ## precision: [40.54, 25.23, 19.41], recall: [37.52, 45.9, 52.36], macro-F1: 12.9, micro-F1: 36.45
+(Test) Ekman ## precision: [46.77, 37.49, 29.38], recall: [44.38, 70.81, 82.45], macro-F1: 31.48, micro-F1: 43.8
+(Test) Sentiment ## precision: [41.88, 38.0, 31.85], recall: [39.54, 71.8, 89.83], macro-F1: 22.59, micro-F1: 41.64
+
+Epoch: 7
+(Dev) Fine-grained ## precision: [39.66, 25.23, 19.38], recall: [36.86, 45.6, 51.9], macro-F1: 12.44, micro-F1: 36.07
+(Dev) Ekman ## precision: [46.68, 38.16, 29.71], recall: [44.02, 71.66, 83.06], macro-F1: 29.03, micro-F1: 43.62
+(Dev) Sentiment ## precision: [43.66, 38.28, 32.26], recall: [40.97, 71.91, 90.43], macro-F1: 23.19, micro-F1: 43.18
+(Test) Fine-grained ## precision: [40.59, 25.49, 19.42], recall: [37.52, 46.29, 52.29], macro-F1: 13.52, micro-F1: 36.52
+(Test) Ekman ## precision: [46.97, 37.41, 29.31], recall: [44.57, 70.61, 82.26], macro-F1: 31.51, micro-F1: 44.2
+(Test) Sentiment ## precision: [42.38, 38.06, 31.92], recall: [39.98, 71.9, 90.03], macro-F1: 23.61, micro-F1: 42.12
+
+Epoch: 8
+(Dev) Fine-grained ## precision: [39.92, 25.4, 19.7], recall: [37.11, 46.01, 53.0], macro-F1: 13.63, micro-F1: 36.27
+(Dev) Ekman ## precision: [46.87, 38.19, 29.83], recall: [44.25, 71.78, 83.39], macro-F1: 29.13, micro-F1: 43.79
+(Dev) Sentiment ## precision: [43.2, 38.54, 32.2], recall: [40.52, 72.5, 90.23], macro-F1: 22.17, micro-F1: 42.68
+(Test) Fine-grained ## precision: [40.85, 25.73, 19.57], recall: [37.83, 46.75, 52.82], macro-F1: 14.73, micro-F1: 36.82
+(Test) Ekman ## precision: [46.86, 37.72, 29.4], recall: [44.49, 71.22, 82.46], macro-F1: 30.86, micro-F1: 44.04
+(Test) Sentiment ## precision: [41.64, 38.26, 31.87], recall: [39.34, 72.37, 89.88], macro-F1: 22.34, micro-F1: 41.46
+
+Epoch: 9
+(Dev) Fine-grained ## precision: [39.94, 25.44, 19.61], recall: [37.04, 46.05, 52.65], macro-F1: 13.98, micro-F1: 36.2
+(Dev) Ekman ## precision: [46.5, 38.23, 29.87], recall: [43.95, 71.84, 83.48], macro-F1: 29.29, micro-F1: 43.46
+(Dev) Sentiment ## precision: [43.92, 38.44, 32.2], recall: [41.21, 72.27, 90.25], macro-F1: 24.16, micro-F1: 43.35
+(Test) Fine-grained ## precision: [40.81, 25.82, 19.6], recall: [37.78, 46.93, 52.92], macro-F1: 15.43, micro-F1: 36.82
+(Test) Ekman ## precision: [46.82, 37.49, 29.4], recall: [44.46, 70.76, 82.49], macro-F1: 31.28, micro-F1: 43.91
+(Test) Sentiment ## precision: [42.38, 38.19, 31.91], recall: [40.04, 72.17, 90.01], macro-F1: 24.21, micro-F1: 42.1
+
+(Final Test) Fine-grained ## precision: [40.81, 25.82, 19.6], recall: [37.78, 46.93, 52.92], macro-F1: 15.43, micro-F1: 36.82
+(Final Test) Ekman ## precision: [46.82, 37.49, 29.4], recall: [44.46, 70.76, 82.49], macro-F1: 31.28, micro-F1: 43.91
+(Final Test) Sentiment ## precision: [42.38, 38.19, 31.91], recall: [40.04, 72.17, 90.01], macro-F1: 24.21, micro-F1: 42.1

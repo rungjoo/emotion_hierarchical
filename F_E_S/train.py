@@ -31,7 +31,7 @@ def pdloss(batch_pred_distribution, batch_label_distribution):
 ## finetune RoBETa-large
 def main():
     """Dataset Loading"""
-    class_type = args.class_type # 'fine_grained'
+    class_type = f"{args.class_type}/{args.w1}_{args.w2}_{args.w3}" # 'fine_grained'
     model_type = 'bert-base-cased'
     batch_size = args.batch
     
@@ -61,7 +61,7 @@ def main():
     logger.setLevel(level=logging.DEBUG)      
     
     """Model Loading"""
-    model = EmoModel(model_type)
+    model = EmoModel(model_type, soft=args.soft)
     model = model.cuda()    
     model.train() 
     
@@ -91,9 +91,9 @@ def main():
             spred_distribution = softmax(spred_logits, 1)
 
             """Loss calculation & training"""
-            floss_val = pdloss(fpred_distribution, fine_batch_labels)
-            eloss_val = pdloss(epred_distribution, ekman_batch_labels)
-            sloss_val = pdloss(spred_distribution, senti_batch_labels)
+            floss_val = args.w1*pdloss(fpred_distribution, fine_batch_labels)
+            eloss_val = args.w2*pdloss(epred_distribution, ekman_batch_labels)
+            sloss_val = args.w3*pdloss(spred_distribution, senti_batch_labels)
             loss_val = floss_val + eloss_val + sloss_val
             
             loss_val.backward()
@@ -291,6 +291,11 @@ if __name__ == '__main__':
     parser.add_argument( "--norm", type=int, help = "max_grad_norm", default = 10)
     parser.add_argument( "--lr", type=float, help = "learning rate", default = 1e-6) # 1e-5
     parser.add_argument( "--class_type", type=str, help = "f2c", default = "f2c")
+    parser.add_argument( "--soft", action='store_true')
+    
+    parser.add_argument( "--w1", type=float, help = "weight1", default = 1)
+    parser.add_argument( "--w2", type=float, help = "weight1", default = 1)
+    parser.add_argument( "--w3", type=float, help = "weight1", default = 1)
         
     args = parser.parse_args()
     

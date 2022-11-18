@@ -3,10 +3,13 @@ import torch
 import torch.nn as nn
 import os
 import json
+import pdb
+from torch.nn.functional import softmax
 
 class EmoModel(nn.Module):
-    def __init__(self, model_type):
-        super(EmoModel, self).__init__()        
+    def __init__(self, model_type, soft):
+        super(EmoModel, self).__init__()
+        self.soft = soft
         
         model_path = os.path.join('/data/project/rw/rung/model', model_type)
         self.tokenizer = BertTokenizer.from_pretrained(model_path)
@@ -36,9 +39,20 @@ class EmoModel(nn.Module):
             input_tokens: (batch, len)
         """
         hidden_outs = self.model(batch_input_ids, attention_mask=batch_attention_mask)['last_hidden_state'] # [B, L, 768]
+        
         fpred_outs = self.Wf(hidden_outs) # (B, L, C)
-        epred_outs = self.We(fpred_outs) # (B, L, C)
-        spred_outs = self.Ws(epred_outs) # (B, L, C)
+        soft_fpred_outs = softmax(fpred_outs, 2)
+        
+        if self.soft:
+            epred_outs = self.We(soft_fpred_outs) # (B, L, C)
+        else:
+            epred_outs = self.We(fpred_outs) # (B, L, C)
+        soft_epred_outs = softmax(epred_outs, 2)
+        
+        if self.soft:
+            spred_outs = self.Ws(soft_epred_outs) # (B, L, C)
+        else:
+            spred_outs = self.Ws(epred_outs) # (B, L, C)
         
         fcls_outs = fpred_outs[:,0,:] # (B, C)
         ecls_outs = epred_outs[:,0,:] # (B, C)
